@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ZERO INDEX — Free AI models you can run as an agent</title>
+  <meta name="description" content="A live field guide to AI models you can use for free as a coding agent on your own computer: local weights, free hosted agents and free API tiers, with exact setup commands and limits verified on 7 November 2026." />
+  <meta name="theme-color" content="#07070b" />
+  <meta property="og:title" content="ZERO INDEX — Free AI models you can run as an agent" />
+  <meta property="og:description" content="24 routes to a $0 coding agent: local weights, rotating free tiers, and the exact commands to wire them up. With a live feed of what is free right now." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2307070b'/%3E%3Ccircle cx='32' cy='32' r='21' fill='none' stroke='%23d9ff3f' stroke-width='4'/%3E%3Ctext x='32' y='43' font-family='monospace' font-size='30' fill='%23d9ff3f' text-anchor='middle'%3E0%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <a class="skip" href="#atlas">Skip to the atlas</a>
+
+  <div class="grain" aria-hidden="true"></div>
+  <div class="aurora" aria-hidden="true">
+    <span class="blob b1"></span>
+    <span class="blob b2"></span>
+    <span class="blob b3"></span>
+  </div>
+  <div class="scroll-progress" aria-hidden="true"><span id="progressBar"></span></div>
+
+  <header class="nav" id="nav">
+    <a class="brand" href="#top" aria-label="ZERO INDEX home">
+      <span class="brand-mark">0</span>
+      ZERO INDEX
+      <span class="brand-sub">free agent atlas</span>
+    </a>
+    <nav class="nav-links" aria-label="Sections">
+      <a href="#atlas">Atlas</a>
+      <a href="#live">Live wire</a>
+      <a href="#match">Match</a>
+      <a href="#playbook">Playbook</a>
+    </nav>
+    <a class="nav-cta" href="#live"><span class="dot"></span> Live feed</a>
+  </header>
+
+  <main id="top">
+    <!-- ============================================================ HERO -->
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">
+          <span class="dot"></span>
+          Free agent index
+          <span class="sep">/</span>
+          Verified <b>7 Nov 2026</b>
+          <span class="sep">/</span>
+          <span id="heroCounter">24 routes</span>
+        </p>
+
+        <h1>
+          Free models.<br />
+          <span class="serif">Real agents.</span><br />
+          <span class="outline">Your machine.</span>
+        </h1>
+
+        <p class="lede">
+          Every AI model you can drive as a coding agent for <b>$0</b> — local weights,
+          rotating free tiers and free API keys. What it costs, where it breaks, and the
+          exact command to start. <b>23 of 24 routes need no card.</b>
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-lime" href="#atlas">Explore the atlas <span aria-hidden="true">↓</span></a>
+          <a class="btn btn-ghost" href="#match">Find my setup <span aria-hidden="true">→</span></a>
+        </div>
+
+        <dl class="hero-stats">
+          <div>
+            <dt>Routes tracked</dt>
+            <dd id="statRoutes">24</dd>
+          </div>
+          <div>
+            <dt>Free models live</dt>
+            <dd class="live" id="statLive">—</dd>
+          </div>
+          <div>
+            <dt>No account needed</dt>
+            <dd id="statNoAccount">—</dd>
+          </div>
+          <div>
+            <dt>Price per token</dt>
+            <dd>$0.00</dd>
+          </div>
+        </dl>
+      </div>
+
+      <aside class="specimen" aria-label="Example zero-cost agent configuration">
+        <div class="specimen-top">
+          <span class="window-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span class="file">agent_specimen.json</span>
+          <span>0 / 24</span>
+        </div>
+
+        <div class="specimen-price" aria-label="Zero dollars">
+          <span class="currency">$</span>0<span class="cents">.00</span>
+        </div>
+        <p class="specimen-sub">per token · per seat · per month</p>
+
+        <div class="specimen-rows">
+          <div class="row"><span class="k">Model</span><span class="v">gpt-oss:20b</span></div>
+          <div class="row"><span class="k">Runtime</span><span class="v">Ollama → OpenCode</span></div>
+          <div class="row"><span class="k">Context</span><span class="v">128K</span></div>
+          <div class="row"><span class="k">API key</span><span class="v zero">none</span></div>
+          <div class="row"><span class="k">Card</span><span class="v zero">none</span></div>
+          <div class="row"><span class="k">Cloud</span><span class="v zero">not required</span></div>
+        </div>
+
+        <div class="terminal" id="heroTerminal"><span class="prompt">$</span><span id="typeTarget">ollama launch opencode</span><span class="cursor" aria-hidden="true"></span></div>
+
+        <div class="specimen-foot">
+          <span>Price locked · forever</span>
+          <span class="barcode" aria-hidden="true">
+            <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+          </span>
+        </div>
+      </aside>
+    </section>
+
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track" id="tickerTrack">
+        <span>gpt-oss:20b — $0</span><span>Nemotron 3 Ultra — $0</span><span>Gemma 4 — $0</span><span>Crouton Alpha — $0</span><span>GitHub Copilot Free — $0</span><span>Antigravity — $0</span><span>Qwen3-Coder — $0</span><span>Groq free plan — $0</span><span>North Mini Code — $0</span><span>DeepSeek V4.1 Flash — $0</span>
+      </div>
+    </div>
+
+    <!-- ========================================================= REALITY -->
+    <section class="reality" aria-label="Three things to know">
+      <article class="reality-item reveal">
+        <span class="num">01</span>
+        <h3>Free tiers rotate.</h3>
+        <p>Four free OpenRouter models vanished in the week to 7 November. Treat every free id as borrowed, and keep a local fallback that cannot be delisted.</p>
+      </article>
+      <article class="reality-item reveal">
+        <span class="num">02</span>
+        <h3>Local is the only forever.</h3>
+        <p>Open weights on your own disk have no quota, no card, and no terms page that changes on a Tuesday. Slower, yes — but it is yours.</p>
+      </article>
+      <article class="reality-item reveal">
+        <span class="num">03</span>
+        <h3>Context is the cost.</h3>
+        <p>Agents need 32K–64K of window. Ollama defaults to 4K on most machines, so people blame the model for a configuration mistake.</p>
+      </article>
+    </section>
+
+    <!-- =========================================================== ATLAS -->
+    <section class="section atlas" id="atlas">
+      <div class="section-head">
+        <span class="section-num" aria-hidden="true">01</span>
+        <div>
+          <p class="kicker">The atlas</p>
+          <h2>Every route to a <em>free</em> agent.</h2>
+        </div>
+        <p class="section-note">
+          24 verified routes, worldwide. Open a card for the install path, the real limits
+          and the privacy catch. <b>Filters are instant.</b>
+        </p>
+      </div>
+
+      <div class="controls">
+        <div class="chips" id="catChips" role="group" aria-label="Filter by route type"></div>
+        <label class="search" for="search">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-3.6-3.6"></path></svg>
+          <input id="search" type="search" placeholder="Search a model, maker or tool…" autocomplete="off" />
+          <kbd>/</kbd>
+        </label>
+      </div>
+
+      <div class="filters">
+        <button class="toggle" type="button" data-toggle="no-account" aria-pressed="false">
+          <span class="box" aria-hidden="true"></span> No account
+        </button>
+        <button class="toggle" type="button" data-toggle="no-card" aria-pressed="false">
+          <span class="box" aria-hidden="true"></span> No card
+        </button>
+        <button class="toggle" type="button" data-toggle="offline" aria-pressed="false">
+          <span class="box" aria-hidden="true"></span> Runs offline
+        </button>
+        <button class="toggle" type="button" data-toggle="private" aria-pressed="false">
+          <span class="box" aria-hidden="true"></span> Won't train on my code
+        </button>
+        <span class="result-count" id="resultCount"><b>24</b> of 24 routes</span>
+      </div>
+
+      <div class="grid" id="atlasGrid"></div>
+      <p class="grid-empty" id="gridEmpty" hidden>No route matches that. Try clearing a filter.</p>
+    </section>
+
+    <!-- ============================================================ LIVE -->
+    <section class="section live" id="live">
+      <div class="live-head">
+        <div>
+          <p class="kicker"><span class="dot"></span> Live wire</p>
+          <h2>What's free <em>right now.</em></h2>
+          <p class="copy">
+            Read straight from OpenRouter's public model catalogue, refreshed every minute.
+            This is the part of the page that changes without us touching it.
+          </p>
+        </div>
+        <div class="live-meta">
+          <div class="live-clock"><b id="utcClock">--:--:--</b> UTC</div>
+          <button class="refresh" id="refreshLive" type="button" aria-label="Refresh the live feed">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" aria-hidden="true"><path d="M20 12a8 8 0 1 1-2.3-5.7"></path><path d="M20 4v4h-4"></path></svg>
+            Refresh <span class="timer" id="refreshTimer">60s</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="live-panel">
+        <div class="live-summary">
+          <div class="live-big" id="liveCount">—</div>
+          <p class="live-big-label">models at $0.00 right now</p>
+
+          <div class="live-facts">
+            <div><span>Source</span><a href="https://openrouter.ai/models?max_price=0" target="_blank" rel="noopener">OpenRouter API ↗</a></div>
+            <div><span>Fetched</span><b id="liveFetched">connecting…</b></div>
+            <div><span>Mode</span><b id="liveMode">connecting…</b></div>
+          </div>
+
+          <p class="live-note" id="liveNote">
+            Free variants are capped at 20 requests per minute and 50 per day. A one-time
+            $10 credit purchase raises that to 1,000 per day.
+          </p>
+        </div>
+
+        <div class="live-list" id="liveList" aria-live="polite" aria-busy="true">
+          <div class="live-loading">
+            <div class="bar"><i></i></div>
+            Reading the catalogue…
+          </div>
+        </div>
+      </div>
+
+      <div class="live-foot">
+        <span><span class="badge" id="liveBadge">Connecting</span> curated fallback if the API is unreachable</span>
+        <span>Newest first · context windows as listed upstream</span>
+      </div>
+    </section>
+
+    <!-- =========================================================== MATCH -->
+    <section class="section match" id="match">
+      <div class="section-head">
+        <span class="section-num" aria-hidden="true">02</span>
+        <div>
+          <p class="kicker">The match</p>
+          <h2>Your machine, <em>matched.</em></h2>
+        </div>
+        <p class="section-note">
+          Three answers. The list updates live and respects your constraints — including
+          “no accounts at all”, which leaves only local and keyless routes.
+        </p>
+      </div>
+
+      <div class="match-grid">
+        <div class="questions">
+          <div>
+            <p class="q-label"><b>Q1</b> Your computer</p>
+            <div class="options" role="group" aria-label="Your computer">
+              <button class="option" type="button" data-q="hardware" data-v="apple" aria-pressed="false"><span class="tick" aria-hidden="true"></span> Apple silicon, 16 GB+</button>
+              <button class="option" type="button" data-q="hardware" data-v="nvidia" aria-pressed="false"><span class="tick" aria-hidden="true"></span> NVIDIA GPU, 16 GB+</button>
+              <button class="option" type="button" data-q="hardware" data-v="laptop" aria-pressed="false"><span class="tick" aria-hidden="true"></span> Modest laptop, 8–16 GB</button>
+              <button class="option" type="button" data-q="hardware" data-v="unsure" aria-pressed="false"><span class="tick" aria-hidden="true"></span> Not sure</button>
+            </div>
+          </div>
+
+          <div>
+            <p class="q-label"><b>Q2</b> Where you work</p>
+            <div class="options" role="group" aria-label="Where you work">
+              <button class="option" type="button" data-q="place" data-v="terminal" aria-pressed="false"><span class="tick" aria-hidden="true"></span> Terminal first</button>
+              <button class="option" type="button" data-q="place" data-v="vscode" aria-pressed="false"><span class="tick" aria-hidden="true"></span> VS Code</button>
+              <button class="option" type="button" data-q="place" data-v="ide" aria-pressed="false"><span class="tick" aria-hidden="true"></span> A full IDE</button>
+              <button class="option" type="button" data-q="place" data-v="any" aria-pressed="false"><span class="tick" aria-hidden="true"></span> No preference</button>
+            </div>
+          </div>
+
+          <div>
+            <p class="q-label"><b>Q3</b> What you'll accept</p>
+            <div class="options" role="group" aria-label="What you will accept">
+              <button class="option" type="button" data-q="account" data-v="none" aria-pressed="false"><span class="tick" aria-hidden="true"></span> No accounts at all</button>
+              <button class="option" type="button" data-q="account" data-v="signup" aria-pressed="false"><span class="tick" aria-hidden="true"></span> Free signups are fine</button>
+              <button class="option" type="button" data-q="account" data-v="card" aria-pressed="false"><span class="tick" aria-hidden="true"></span> A card is fine</button>
+              <button class="option" type="button" data-q="account" data-v="any" aria-pressed="false"><span class="tick" aria-hidden="true"></span> Show me everything</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="match-results">
+          <div class="mr-head"><span>Your top routes</span><b id="matchCount">no answers yet</b></div>
+          <div id="matchList"></div>
+          <button class="mr-reset" id="matchReset" type="button">Reset answers ↺</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================== PLAYBOOK -->
+    <section class="section playbook" id="playbook">
+      <div class="section-head">
+        <span class="section-num" aria-hidden="true">03</span>
+        <div>
+          <p class="kicker">The playbook</p>
+          <h2>Rules for <em>free.</em></h2>
+        </div>
+        <p class="section-note">
+          Four things that decide whether a $0 agent feels magical or broken. None of them
+          are about which model has the best benchmark.
+        </p>
+      </div>
+
+      <div class="playbook-grid" id="playbookGrid"></div>
+
+      <div class="cheat-wrap reveal">
+        <div class="cheat-head">
+          <span>Base URLs — one-line provider swap</span>
+          <span>OpenAI-compatible</span>
+        </div>
+        <div id="cheatBody"></div>
+      </div>
+
+      <div class="deadends reveal">
+        <h4>Dead ends — don't chase these</h4>
+        <div class="dead-grid">
+          <div>
+            <b>Gemini CLI</b>
+            <span>Its personal free sign-in ended on 18 June 2026; Google moved free agent access to Antigravity.</span>
+          </div>
+          <div>
+            <b>Qwen Code</b>
+            <span>The free Qwen OAuth tier ended on 15 April 2026. The CLI still works with your own key or a local model.</span>
+          </div>
+          <div>
+            <b>GitHub Models</b>
+            <span>Fully retired on 30 July 2026, including the playground and inference API.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================== FOOTER -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-word">ZERO<em>INDEX</em></div>
+      <p class="footer-tag">A field guide to running free AI agents on hardware you actually own.</p>
+    </div>
+
+    <div class="footer-cols">
+      <div class="footer-col">
+        <h4>The atlas</h4>
+        <ul>
+          <li><a href="#atlas">All 24 routes</a></li>
+          <li><a href="#live">Live free models</a></li>
+          <li><a href="#match">Match my machine</a></li>
+          <li><a href="#playbook">Playbook + base URLs</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Live sources</h4>
+        <ul>
+          <li><a href="https://openrouter.ai/api/v1/models" target="_blank" rel="noopener">OpenRouter models API ↗</a></li>
+          <li><a href="https://ollama.com/library" target="_blank" rel="noopener">Ollama library ↗</a></li>
+          <li><a href="https://ai.google.dev/gemini-api/docs/pricing" target="_blank" rel="noopener">Gemini API pricing ↗</a></li>
+          <li><a href="https://console.groq.com/docs/rate-limits" target="_blank" rel="noopener">Groq limits ↗</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Verify before you build</h4>
+        <ul>
+          <li><a href="https://antigravity.google" target="_blank" rel="noopener">Antigravity plans ↗</a></li>
+          <li><a href="https://github.com/features/copilot/plans" target="_blank" rel="noopener">Copilot Free ↗</a></li>
+          <li><a href="https://developers.cloudflare.com/workers-ai/platform/pricing/" target="_blank" rel="noopener">Workers AI quota ↗</a></li>
+          <li><a href="https://mistral.ai/pricing" target="_blank" rel="noopener">Mistral free plan ↗</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>About</h4>
+        <p>
+          Independent and unaffiliated. Limits were read from provider pages on
+          7 November 2026 — free tiers move fast, so follow the source link on any card.
+        </p>
+      </div>
+    </div>
+
+    <div class="footer-base">
+      <span>ZERO INDEX · $0.00 · 23 of 24 routes need no card</span>
+      <span id="footerStamp">VERIFIED 7 NOV 2026 · LIVE FEED EVERY 60S</span>
+    </div>
+  </footer>
+
+  <!-- =========================================================== DRAWER -->
+  <div class="drawer-backdrop" id="drawerBackdrop" hidden></div>
+  <aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-labelledby="drawerTitle" aria-hidden="true" inert>
+    <div class="drawer-head" id="drawerHead">
+      <span class="bar" aria-hidden="true"></span>
+      <div class="drawer-kicker">
+        <span class="cat" id="drawerCat">Local route</span>
+        <span id="drawerIndex">01 / 24</span>
+      </div>
+      <h3 id="drawerTitle">Route</h3>
+      <p class="drawer-maker" id="drawerMaker"></p>
+      <button class="drawer-close" id="drawerClose" type="button" aria-label="Close recipe">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19"></path></svg>
+      </button>
+    </div>
+    <div class="drawer-body" id="drawerBody"></div>
+  </aside>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <noscript>
+    <p style="padding:24px;font-family:monospace;color:#d9ff3f">This index needs JavaScript to render the routes and the live feed.</p>
+  </noscript>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
